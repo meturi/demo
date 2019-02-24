@@ -7,7 +7,7 @@ public class module2 {
 	String name[];
 	double salary[];
 
-	void display(int eid[], String name[], double salary[]) {
+	 void display(int eid[], String name[], double salary[]) {
 		System.out.println("ID  " + "  Name  " + "  Salary  ");
 		for (int i = 0; i < 5; i++) {
 			System.out.println(+eid[i] + "   " + name[i] + "   " + salary[i]);
@@ -15,8 +15,7 @@ public class module2 {
 		}
 
 	}
-
-	void display(int eid[], String name[]) {
+ void display(int eid[], String name[]) {
 		System.out.println("ID  " + "  Name  ");
 		for (int i = 0; i < 5; i++) {
 			System.out.println(+eid[i] + "   " + name[i]);
@@ -43,10 +42,10 @@ public class module2 {
 		double salary[] = { 600000, 550000, 500000, 500000, 300000 };*/
 		 
 
-		module2 m = new module2();
+	module2 m = new module2();
 
 		Scanner sc = new Scanner(System.in);
-		try {
+		
 			int eid[] = new int[5];
 			String name[] = new String[5];
 			double salary[] = new double[5];
@@ -61,8 +60,6 @@ public class module2 {
 			System.out.println("Enter the name to be searched");
 			String name1 = sc.next();
 			m.display(name1, eid, name, salary);
-		} finally {
-			sc.close();
 		}
 	}
-}
+
